@@ -1,0 +1,40 @@
+nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: max-content;
+  padding: 0.8rem 2rem;
+  display: flex;
+  gap: 1rem;
+  z-index: 9999;
+  position: fixed;
+  left: 50%;
+  bottom: 4rem;
+  backdrop-filter: blur(15px);
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  border-radius: 4rem;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
+  -ms-border-radius: 4rem;
+  -o-border-radius: 4rem;
+}
+nav a {
+  background: transparent;
+  padding: 0.9rem;
+  color: var(--color-light);
+  display: flex;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+nav a:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+nav a.active {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
